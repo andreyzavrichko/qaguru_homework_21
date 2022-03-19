@@ -17,7 +17,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
-import static org.openqa.selenium.remote.CapabilityType.APPLICATION_NAME;
 
 @ParametersAreNonnullByDefault
 public class LocalMobileDriver implements WebDriverProvider {
@@ -31,10 +30,8 @@ public class LocalMobileDriver implements WebDriverProvider {
         options.merge(capabilities);
         options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
         options.setPlatformName("Android");
-//        options.setDeviceName("RFCR90ZMNQP");
         options.setDeviceName("Pixel_4_API_30");
         options.setPlatformVersion("11.0");
-//        options.setCapability(APPLICATION_NAME, "Appium");
         options.setApp(app.getAbsolutePath());
         options.setLocale("en");
         options.setLanguage("en");
