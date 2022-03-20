@@ -23,7 +23,6 @@ public class TestBase {
         addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.browser = getDeviceDriver(deviceHost);
-        Configuration.timeout = 10000;
         Configuration.browserSize = null;
 
     }
