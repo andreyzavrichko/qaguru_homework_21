@@ -20,6 +20,7 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 @ParametersAreNonnullByDefault
 public class LocalMobileDriver implements WebDriverProvider {
+
     @Override
     @CheckReturnValue
     @Nonnull
